@@ -3,12 +3,11 @@ const chai = require('chai');
 const assert = chai.assert;
 
 describe('function name', function() {
-  it('sum numbers in an array', function() {
-    assert.equal(main.sumNumbers([1,2,3]), 6);
+  it('returns the number of vowels in a string', function() {
+    assert.equal(main.countVowels('Hello'), 2);
   });
-  it('if array elements are non-numbers, result should concatenate', function() {
-    const strArray= ['a','b','c'];
-    assert.equal(main.sumNumbers(strArray), 'abc');
+  it('returns the number of vowels in a string, regardless if they are uppercase or lowercase', function() {
+    assert.equal(main.countVowelss("Hello, How Are You?"), 7);
   });
 
 });

@@ -1,12 +1,15 @@
-function sumNumbers (arr) {
-  return arr.reduce((sum, value)=>{
-    return sum + value;
+function countVowels (str) {
+  let arr = str.split('');
+  var result = arr.filter(ele => {
+    ele = ele.toLowerCase()
+    return ele.match(/[aeiou]+/g)
   })
+  return result.length
 }
 
 
 
 
 module.exports = {
-  sumNumbers
+  countVowels
 }
