@@ -7,7 +7,7 @@ describe('function name', function() {
     assert.equal(main.countVowels('Hello'), 2);
   });
   it('returns the number of vowels in a string, regardless if they are uppercase or lowercase', function() {
-    assert.equal(main.countVowelss("Hello, How Are You?"), 7);
+    assert.equal(main.countVowels("Hello, How Are You?"), 7);
   });
 
 });
